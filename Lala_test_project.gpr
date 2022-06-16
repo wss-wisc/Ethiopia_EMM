@@ -1,0 +1,79 @@
+[PROJECT]
+
+[GDXDIFF]
+FILE1=
+FILE2=
+OUTFL=
+EPS=0.0
+RELEPS=0.0
+SETIGN=0
+FIELD=All fields
+FIELDONLY=0
+DIFFONLY=0
+
+[RP:UNTITLED_1]
+1=r=save\sim_4Aug21
+2=Execute_Unload 'tmp1.gdx',PCX,PPX,PPZX,PCZX,QFZX,QFZpcX,QFZHpcX,QLZX,QOZX,QDZX,ACZX,YCZX,QSZX,ACZ_inputX,YCZ_inputX,QSZ_inputX,TQSX,TACX,TACZX,
+GDPZpcX,GDPZHpcX,CPIX,EXRX,DQTZX,QMX,QEX;=
+Execute 'GDXXRW.EXE tmp1.gdx O=simoutputY.xls index=INDEX!a1';
+
+[RP:CALIBRATIONBASE]
+1=
+
+[RP:SIMULATION]
+1=
+
+[RP:SIM_EXPORTXLS]
+1=r=save\sim_7Dec21fcst2
+2=r=save\sim_7Dec21base2
+3=r=save\sim_7Dec21base
+4=r=save\sim_7Dec21fcst
+5=r=save\sim_6Dec21fcst
+6=r=save\sim_17Sep21
+7=r=save\sim_16Sep21
+8=r=save\sim_15Sep21
+9=r=save\sim_10Aug21
+10=r=save\sim_23Aug21
+11=r=save\sim
+12=r=save\sim_4Aug21
+13=r=-
+14=
+
+[RP:CALIBRATIONBASE_LALA]
+1=save=save\caliBASE gdx=caliBASE
+2=
+3=execute_unload "results.gdx" ACZ_input0
+4=display popz0
+5=GDPZ0(reg,zone,s)
+6=popz0
+7=$CALL 'GDXXRW Input/Inputdatafile_updated2020.xls se=0 index=Index!A1'
+8=CALL 'GDXXRW Input/Inputdatafile_updated2020.xls se=0 index=Index!A1'
+
+[RP:SIMULATION_LALA]
+1=r=save\caliBASE save=save\sim gdx=sim
+2=
+3=$load calibrationBASE_Lala.lst
+
+[MRUFILES]
+1=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\Lala_test_project.gpr
+2=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Ying\simulation.gms
+3=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Ying\calibrationBASE.lst
+4=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Ying\calibrationBASE.gms
+5=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\simulation_Lala.gms
+6=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\simLoopSave.inc
+7=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\sim_exportxls.lst
+8=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\sim_exportxls.gms
+9=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\paramsetup.inc
+
+[OPENWINDOW_1]
+FILE0=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\calibrationBASE_Lala.gms
+FILE1=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\paramsetup.inc
+FILE2=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\sim_exportxls.gms
+FILE3=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\simLoopSave.inc
+FILE4=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\simulation_Lala.gms
+FILE5=C:\Users\JonaL\Desktop\Ethiopia_GIS\EMM\EMM_Lala\Github_files\calibrationBASE_Lala.gms
+MAXIM=0
+TOP=0
+LEFT=0
+HEIGHT=931
+WIDTH=1149
